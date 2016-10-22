@@ -2,11 +2,60 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="Глейси, мороженое, мороженое собственно производства, пломбир, наполнители">
+    <meta name="description" content="Онлайн и офлайн магазин по продаже мороженого собственного производства">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <div class="wrapper">            <!-- для центровки содержимого всего сайта -->
+      <header>
+        <div class="logo">           <!-- float: left -->
+          <img src="img/logo.png" width="" height="" alt="Gllacy Shop logo">
+        </div>
+        <nav>                        <!-- float: left -->
+          <ul class="main-menu">
+            <li>
+              <a href="#1">Каталог</a>
+              <!-- на странице по умолчанию ul будет скрыт (display: none) -->
+              <ul>                     <!-- первый пунк меню является заголовком для последующихпункот меню (корректно ли это?) -->      
+                 <li>Новинки</li>
+                 <li>
+                   <a href="#1.1">Сливочное</a>
+                 </li>
+                 <li>
+                   <a href="#1.2">Щербеты</a>
+                 </li>
+                 <li>
+                   <a href="#1.3">Фруктовый лед</a>
+                 </li>
+                 <li>
+                   <a href="#1.4">Мелорин</a>
+                 </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#2">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#3">Каталог</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <div class="header-right-block"> -->          <!-- нужно ли делать обертку для ниже идущих тегов? -->
+        <a class="mini-basket" href="#">Пусто</a>          <!-- float: right -->
+        <a class="user" href="#">Вход</a>                  <!-- float: right -->
+        <button class="search" type="button"></button>     <!-- float: right -->
+        <!-- на странице по умолчанию form будет скрыт (display: none) -->
+         <form name="search" action="#" method="get">
+          <input type="text" name="query" placeholder="Что ищем?" >
+        </form>
+        <!-- </div> -->
+        <div class="header-info">
+          <p class="info-time">С 10 до 20, ежедневно</p>
+          <p class="info-phone">8 812 450-25-25</p>
+        </div>
+      </header>
+    </div>
   </body>
 </html>

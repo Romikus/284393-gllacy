@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-        <!-- <div class="header-right-block"> -->          <!-- нужно ли делать обертку для ниже идущих тегов? -->
+        <!-- <div class="header-right-block"> -->          <!-- ?нужно ли делать обертку для ниже идущих тегов? -->
         <a class="mini-basket" href="#">Пусто</a>          <!-- float: right -->
         <a class="user" href="#">Вход</a>                  <!-- float: right -->
         <button class="search" type="button"></button>     <!-- float: right -->
@@ -56,6 +56,86 @@
           <p class="info-phone">8 812 450-25-25</p>
         </div>
       </header>
+      <main>
+        <div class="carousel">
+          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+          <div class="carousel-buttons">                      <!-- float: left -->
+            <button class="active" type="button"></button>
+            <button type="button"></button>
+            <button type="button"></button>
+          </div>
+          <div class="carousel-backet"> <!-- ?возможно потребуется для центровки вложенной кнопки? -->
+            <button type="button">Давайте оба!</button> <!-- элемент кнопка, так как ведет к переходу на другую страницу, а только добавляет товар в карзину -->
+          </div>
+        </div>
+        <section class="banner">
+          <div class="banner-block">                    <!-- ?изображение баннера фоновое, задается для div? -->
+            <h2>Малинка даром!</h2>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a href="#">Хочу варенье!</a>               <!-- ссылка, т.к. необходимо перейти на страницу заказа -->
+          </div>
+          <div class="banner-block">                    <!-- ?изображение баннера фоновое, задается для div? -->
+            <h2>Шоколадки даром!</h2>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
+            <a href="#">Хочу шоколадки!</a>               <!-- ссылка, т.к. необходимо перейти на страницу заказа -->
+          </div>
+        </section>
+        <div class="product hit">
+          <div class="product-item">
+            <img src="img/ice_cream.png" width="" height="" alt="ice cream">
+            <div class="product-hit">ХИТ</div>
+            <div class="product-price">310₽<span>/кг</span></div>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream.png" width="" height="" alt="ice cream">
+            <div class="product-hit">ХИТ</div>
+            <div class="product-price">380₽<span>/кг</span></div>
+            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream.png" width="" height="" alt="ice cream">
+            <div class="product-hit">ХИТ</div>
+            <div class="product-price">380₽<span>/кг</span></div>
+            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream.png" width="" height="" alt="ice cream">
+            <div class="product-hit">ХИТ</div>
+            <div class="product-price">380₽<span>/кг</span></div>
+            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          </div>
+        </div>
+        <article class="desc">    <!-- разметка сдела с учетом того, что текстовые блоки нужно будет выровнять по уровню и разбить на две колонки -->
+          <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+          <div class="desc-row">
+            <div class="desc-col">
+              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            </div>
+            <div class="desc-col">
+              <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            </div>
+          </div>
+          <div class="desc-row">
+            <div class="desc-col">
+              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            </div>
+            <div class="desc-col">
+              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            </div>
+          </div>
+        </article>
+        <div class="news">          <!-- ?изображение новости фоновое, задается для div? -->
+          <p>Новое в нашем блоге</p>
+          <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+        </div>
+        <form class="subscription" action="#" method="post">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+          <label for="subs-email">Электронная почта</label>
+          <input id="subs-email" type="email" name="subs-email" placeholder="Электронная почта" required>
+          <button type="submit">Отправить</button>
+        </form>
+      </main>
     </div>
   </body>
 </html>

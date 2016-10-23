@@ -65,7 +65,7 @@
             <button type="button"></button>
           </div>
           <div class="carousel-backet"> <!-- ?возможно потребуется для центровки вложенной кнопки? -->
-            <button type="button">Давайте оба!</button> <!-- элемент кнопка, так как ведет к переходу на другую страницу, а только добавляет товар в карзину -->
+            <button type="button">Давайте оба!</button> <!-- элемент кнопка, так как не ведет к переходу на другую страницу, а только добавляет товар в карзину -->
           </div>
         </div>
         <section class="banner">
@@ -144,9 +144,31 @@
           <p>Для заказов по телефону:</p>
           <b>8 812 450-25-25</b>
           <p>(с 10 до 20 ежедневно)</p>
-          <a href="#">Форма обратной связи</a>      <!-- ссылка, т.к. может может приводить к переходу на другую страницу -->
+          <a href="#">Форма обратной связи</a>      <!-- ссылка, т.к. может приводить к переходу на другую страницу -->
         </div>
       </div>
+      <footer>
+        <div class="socials">
+          <a href="http://twitter.com/" class="socials-icon twitter"><span>twitter</span></a>  <!-- для span display: none -->
+          <a href="http://instagram.com/" class="socials-icon instagram"><span>instagram</span></a>
+          <a href="http://facebook.com/" class="socials-icon facebook"><span>facebook</span></a>
+          <a href="http://vk.com/" class="socials-icon vk"><span>вконтакте</span></a>
+        </div>
+        <div class="info-supplier">
+          <div>
+            <h3><a href="#">Для поставщиков</a></h3>      <!-- ?ссылкой является только текст, а не весь блок загаловка, значок "сердеце" слева от заголовка не является ссылкой? -->
+            <a href="#">О производстве</a>
+          </div>
+          <div>
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <a href="https://htmlacademy.ru"><img src="img/academy-logo" width="" height="" alt="HTML Academy"></a>
+          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

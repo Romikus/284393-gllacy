@@ -1,0 +1,59 @@
+form[name="search"],
+.main-menu ul {
+  position: absolute;
+  display: none;
+}
+.subscription label {
+  display: block;
+  visibility: hidden;
+}
+
+.wrapper {
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+
+/* для отладки */
+/*
+header {
+  background: lightblue;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: left;
+}
+
+.main-menu {
+  background: orange;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu > li {
+  background: lightgreen;
+  float: left;
+}
+
+.mini-basket,
+.user,
+.search {
+  float: right;
+}
+
+.header-info,
+.breadcrumbs {
+  clear: both;
+}
+.info-time,
+.info-phone {
+  text-align: right;
+  margin: 0;
+}
+*/

@@ -60,6 +60,152 @@
           <p class="info-phone">8 812 450-25-25</p>
         </div>
       </header>
+      <main>
+        <!-- <div class="heading"> -->                               <!-- ?обертка для зоголовка? -->
+          <h1 class="heading">Сливочное мороженое</h1>
+        <!-- </div> -->
+        <form class="filter" name="icecreams-filter" action="#" method="post">
+          <div class="triage">
+            <p>Сортировка:</p>
+            <select id="triage-field" name="icecreams-triage">
+              <option value="popularity">по популярности</option>
+              <option value="expensive">сначала недорогие</option>
+              <option value="cheap">сначала дорогие</option>
+              <option value="fat status">по жирности</option>
+            </select>
+          </div>
+          <div class="price">
+            <p>Цена: <span class="min-price">100</span> руб. - <span class="max-price">500</span></p>
+            <input id="price-field" type="range" name="icecreams-price" min="0" max="700" value="100,500" multiple>
+          </div>
+          <div class="fat-status">
+            <p>Жирность:</p>
+            <div>                            <!-- обертка для стилизации блока -->
+              <label>
+                <input type="radio" name="fat-status" value="0">0%
+              </label>
+              <label>
+                <input type="radio" name="fat-status" value="to 10" checked>до 10%
+              </label>
+              <label>
+                <input type="radio" name="fat-status" value="to 30">30%
+              </label>
+              <label>
+                <input type="radio" name="fat-status" value="above 30">выше 30%
+              </label>
+            <div>
+          </div>
+          <div class="fillers">
+            <p>Наполнители:</p>
+            <div>                            <!-- обертка для стилизации блока -->
+              <input type="checkbox" id="chocolate-field" name="chocolate">
+              <label for="сhocolate-field">шоколадные</label>
+              <input type="checkbox" id="sugar-field" name="sugar">
+              <label for="sugar-field">сахарные присыпки</label>
+              <input type="checkbox" id="fruits-field" name="fruits">
+              <label for="fruits-field">фрукты</label>
+              <input type="checkbox" id="syrups-field" name="syrups">
+              <label for="syrups-field">сиропы</label>
+              <input type="checkbox" id="jams-field" name="jams">
+              <label for="jams-field">джемы</label>
+            </div>
+          </div>
+          <button class="button-filter" type="submit" name="button-filter">Применить</button>
+        </form>
+        <div class="product">
+           <div class="product-item">
+            <img src="img/ice_cream1.png" width="" height="" alt="ice cream">
+            <div class="product-price">310₽<span>/кг</span></div>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream2.png" width="" height="" alt="ice cream">
+            <div class="product-price">380₽<span>/кг</span></div>
+            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream3.png" width="" height="" alt="ice cream">
+            <div class="product-price">355₽<span>/кг</span></div>
+            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream4.png" width="" height="" alt="ice cream">
+            <div class="product-price">415₽<span>/кг</span></div>
+            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream5.png" width="" height="" alt="ice cream">
+            <div class="product-price">325₽<span>/кг</span></div>
+            <a href="#">Сливочное с брусничным джемом</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream6.png" width="" height="" alt="ice cream">
+            <div class="product-price">410₽<span>/кг</span></div>
+            <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream7.png" width="" height="" alt="ice cream">
+            <div class="product-price">375₽<span>/кг</span></div>
+            <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream8.png" width="" height="" alt="ice cream">
+            <div class="product-price">320₽<span>/кг</span></div>
+            <a href="#">Сливочное с шоколадной стружкой</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream9.png" width="" height="" alt="ice cream">
+            <div class="product-price">440₽<span>/кг</span></div>
+            <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream10.png" width="" height="" alt="ice cream">
+            <div class="product-price">435₽<span>/кг</span></div>
+            <a href="#">Сливочноe с ментоловым сиропом</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream11.png" width="" height="" alt="ice cream">
+            <div class="product-price">355₽<span>/кг</span></div>
+            <a href="#">Сливочное с кусочками черного шоколада</a>
+          </div>
+          <div class="product-item">
+            <img src="img/ice_cream11.png" width="" height="" alt="ice cream">
+            <div class="product-price">420₽<span>/кг</span></div>
+            <a href="#">Сливочное с мятным сиропом</a>
+          </div>
+        </div>
+        <div class="paginator">
+          <a class="disabled" href="#">Назад</a>        <!-- класс неактиновной кнопки -->
+          <a class="current" href="#">1</a>             <!-- класс активной кнопки кнопки -->
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">Вперед</a>
+        </div>
+      </main>
+      <footer class="fotter-line">              <!-- класс для отрисовки линии -->
+        <div class="socials">
+          <a href="http://twitter.com/" class="socials-icon twitter"><span>twitter</span></a>  <!-- для span display: none -->
+          <a href="http://instagram.com/" class="socials-icon instagram"><span>instagram</span></a>
+          <a href="http://facebook.com/" class="socials-icon facebook"><span>facebook</span></a>
+          <a href="http://vk.com/" class="socials-icon vk"><span>вконтакте</span></a>
+        </div>
+        <div class="info-supplier">
+          <div>
+            <h3><a href="#">Для поставщиков</a></h3>      <!-- ?ссылкой является только текст, а не весь блок загаловка, значок "сердеце" слева от заголовка не является ссылкой? -->
+            <a href="#">О производстве</a>
+          </div>
+          <div>
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <a href="https://htmlacademy.ru"><img src="img/academy-logo" width="" height="" alt="HTML Academy"></a>
+          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

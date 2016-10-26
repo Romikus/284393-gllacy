@@ -11,14 +11,14 @@
     <div class="wrapper">            <!-- для центровки содержимого всего сайта -->
       <header>
         <div class="logo">           <!-- float: left -->
-          <img src="img/logo.png" width="" height="" alt="Gllacy Shop logo">
+          <img src="img/logo.png" alt="Gllacy Shop logo">
         </div>
         <nav>                        <!-- float: left -->
           <ul class="main-menu">
             <li>
               <a href="#1">Каталог</a>
               <!-- на странице по умолчанию ul будет скрыт (display: none) -->
-              <ul>                     <!-- первый пунк меню является заголовком для последующихпункот меню (корректно ли это?) -->      
+              <ul class="menu-dropdown">      <!-- первый пунк меню является заголовком для последующих пунктов меню (корректно ли это?) -->
                  <li>Новинки</li>
                  <li>
                    <a href="#1.1">Сливочное</a>
@@ -42,12 +42,12 @@
             </li>
           </ul>
         </nav>
-        <!-- <div class="header-right-block"> -->          <!-- ?нужно ли делать обертку для ниже идущих тегов? -->
+        <!-- <div class="header-block-right"> -->          <!-- ?нужно ли делать обертку для ниже идущих тегов? -->
         <a class="mini-basket" href="#">Пусто</a>          <!-- float: right -->
         <a class="user" href="#">Вход</a>                  <!-- float: right -->
         <button class="search" type="button"></button>     <!-- float: right -->
         <!-- на странице по умолчанию form будет скрыт (display: none) -->
-         <form name="search" action="#" method="get">
+        <form name="search" action="#" method="get">
           <input type="text" name="query" placeholder="Что ищем?" >
         </form>
         <!-- </div> -->
@@ -58,53 +58,53 @@
       </header>
       <main>
         <div class="carousel">
-          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+          <h2>Крем-брюле и пломбир с малиновым джемом</h2>    <!-- по сути заголовок h2 сюда не совсем подходит, но более подходящего тега подобрать не смог -->
           <div class="carousel-buttons">                      <!-- float: left -->
             <button class="active" type="button"></button>
             <button type="button"></button>
             <button type="button"></button>
           </div>
-          <div class="carousel-backet"> <!-- ?возможно потребуется для центровки вложенной кнопки? -->
-            <button type="button">Давайте оба!</button> <!-- элемент кнопка, так как не ведет к переходу на другую страницу, а только добавляет товар в карзину -->
+          <div class="carousel-backet">        <!-- ?возможно потребуется для центровки вложенной кнопки? -->
+            <a href="#">Давайте оба!</a>       <!-- элемент ссылка, так как может быть осуществлен переход в карзину -->
           </div>
         </div>
-        <section class="banner">
-          <div class="banner-block">                    <!-- ?изображение баннера фоновое, задается для div? -->
+        <section class="banners">
+          <div class="banners-block">           <!-- ?изображение баннера фоновое, задается для div? -->
             <h2>Малинка даром!</h2>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a href="#">Хочу варенье!</a>               <!-- ссылка, т.к. необходимо перейти на страницу заказа -->
+            <a href="#">Хочу варенье!</a>       <!-- ссылка, т.к. необходимо перейти на страницу заказа -->
           </div>
-          <div class="banner-block">                    <!-- ?изображение баннера фоновое, задается для div? -->
+          <div class="banners-block">           <!-- ?изображение баннера фоновое, задается для div? -->
             <h2>Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
-            <a href="#">Хочу шоколадки!</a>               <!-- ссылка, т.к. необходимо перейти на страницу заказа -->
+            <a href="#">Хочу шоколадки!</a>     <!-- ссылка, т.к. необходимо перейти на страницу заказа -->
           </div>
         </section>
-        <div class="product hit">
-          <div class="product-item">
-            <img src="img/ice_cream1.png" width="" height="" alt="ice cream">
-            <div class="product-hit">ХИТ</div>
+        <div class="catalog">
+          <article class="catalog-item">        <!-- div заменил на article, скорее всего class будет не нужен -->
+            <img class="product" src="img/ice_cream1.png" alt="ice cream">
+            <img class="hit" src="img/hit.png" alt="hit">
             <div class="product-price">310₽<span>/кг</span></div>
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          </div>
-          <div class="product-item">
-            <img src="img/ice_cream2.png" width="" height="" alt="ice cream">
-            <div class="product-hit">ХИТ</div>
+            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>  <!-- дополнительно обернул в h3, так как является названием продукта -->
+          </article>
+          <article class="product-item">
+            <img src="img/ice_cream2.png" alt="ice cream">
+            <img class="hit" src="img/hit.png" alt="hit">
             <div class="product-price">380₽<span>/кг</span></div>
-            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-          </div>
-          <div class="product-item">
-            <img src="img/ice_cream3.png" width="" height="" alt="ice cream">
-            <div class="product-hit">ХИТ</div>
+            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+          </article>
+          <article class="product-item">
+            <img src="img/ice_cream3.png" alt="ice cream">
+            <img class="hit" src="img/hit.png" alt="hit">
             <div class="product-price">380₽<span>/кг</span></div>
-            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          </div>
-          <div class="product-item">
-            <img src="img/ice_cream4.png" width="" height="" alt="ice cream">
-            <div class="product-hit">ХИТ</div>
+            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+          </article>
+          <article class="product-item">
+            <img src="img/ice_cream4.png" alt="ice cream">
+            <img class="hit" src="img/hit.png" alt="hit">
             <div class="product-price">380₽<span>/кг</span></div>
-            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          </div>
+            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+          </article>
         </div>
         <article class="desc">    <!-- разметка сдела с учетом того, что текстовые блоки нужно будет выровнять по уровню и разбить на две колонки -->
           <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
@@ -127,17 +127,19 @@
         </article>
         <div class="news">          <!-- ?изображение новости фоновое, задается для div? -->
           <p>Новое в нашем блоге</p>
-          <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+          <h3><a href="#">10  способов сервировки фруктовых щербетов к столу</a></h3>    <!-- добавил h3, так как является названием для статьи по ссылке -->
         </div>
-        <form class="subscription" action="#" method="post">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-          <label for="subs-email">Электронная почта</label>
-          <input id="subs-email" type="email" name="subs-email" placeholder="Электронная почта" required>
-          <button type="submit">Отправить</button>
+        <div class="subscription">        <!-- для блока задается фоновое изображение, которое будет рамкой для form -->
+          <form action="#" method="post">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+            <label for="subs-email">Электронная почта</label>              <!-- будет отображаться, когда фокус в поле ввода -->
+            <input id="subs-email" type="email" name="subs-email" placeholder="Электронная почта" required>
+            <button type="submit">Отправить</button>
         </form>
+        </div>
       </main>
-      <div class="map">            <!-- ?изображение карты фоновое, задается для div? -->
-        <img src="img/pointer.png">
+      <div class="map">            <!-- ?изображение карты с отметкой, задается общей картинкой? как при таком подходе сделать сайт резиновым, ведь картинка будет тянуться по ширине и сильно искажаться -->
+        <img src="img/map.png" alt="map">
         <div class="contacts">
           <p>Адрес главного офиса и офлайн магазина:</p>
           <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -156,7 +158,7 @@
         </div>
         <div class="info-supplier">
           <div>
-            <h3><a href="#">Для поставщиков</a></h3>      <!-- ?ссылкой является только текст, а не весь блок загаловка, значок "сердеце" слева от заголовка не является ссылкой? -->
+            <h3><a href="#">Для поставщиков</a></h3>      <!--  является ли значок "сердце" слева от заголовка ссылкой? -->
             <a href="#">О производстве</a>
           </div>
           <div>
@@ -165,7 +167,7 @@
           </div>
         </div>
         <div class="footer-logo">
-          <a href="https://htmlacademy.ru"><img src="img/academy-logo" width="" height="" alt="HTML Academy"></a>
+          <a href="https://htmlacademy.ru"><img src="img/academy-logo" alt="HTML Academy"></a>
           <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
         </div>
       </footer>

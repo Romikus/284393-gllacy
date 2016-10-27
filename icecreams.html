@@ -5,7 +5,7 @@
     <meta name="keywords" content="Глейси, мороженое, сливочное мороженое, наполнители">
     <meta name="description" content="Каталог сливочного мороженого">
     <title>Глейси - Сливочное мороженое</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">      <!-- для центровки содержимого всего сайта -->
@@ -39,15 +39,15 @@
             </li>
           </ul>
         </nav>
-        <!-- <div class="header-right-block"> -->                      <!-- ?нужно ли делать обертку для ниже идущих тегов? -->
-        <a class="mini-basket basket-full" href="#">Пусто</a>          <!-- float: right -->
-        <a class="user" href="#">Вход</a>                              <!-- float: right -->
-        <button class="search" type="button"></button>                 <!-- float: right -->
-        <!-- на странице по умолчанию form будет скрыт (display: none) -->
-         <form name="search" action="#" method="get">
-          <input type="text" name="query" placeholder="Что ищем?" >
-        </form>
-        <!-- </div> -->
+        <div class="header-right-block">
+          <a class="mini-basket basket-full" href="#">Пусто</a>          <!-- float: right -->
+          <a class="user" href="#">Вход</a>                              <!-- float: right -->
+          <button class="search" type="button"></button>                 <!-- float: right -->
+          <!-- на странице по умолчанию form будет скрыт (display: none) -->
+           <form name="search" action="#" method="get">
+            <input type="text" name="query" placeholder="Что ищем?" >
+          </form>
+        </div>
         <div class="breadcrumbs">              <!-- обернул в div для позиционирования блока, возможно является лишним -->
           <ul>
             <li><a href="#main">Главная</a></li>
@@ -64,7 +64,7 @@
         <!-- <div class="heading"> -->                               <!-- ?обертка для заголовка? -->
           <h1 class="heading">Сливочное мороженое</h1>
         <!-- </div> -->
-        <form class="filter" name="icecreams-filter" action="#" method="post">
+        <form class="filter" name="icecreams-filter" action="#" method="get">
           <div class="block-filter">  <!-- triage -->
             <p>Сортировка:</p>
             <select id="triage-field" name="icecreams-triage">

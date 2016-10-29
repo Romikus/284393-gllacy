@@ -15,21 +15,23 @@
           <ul class="main-menu">
             <li>
               <a class="main-menu-active" href="№1">Каталог</a>
-              <ul class="menu-dropdown">
-                <li>Новинки</li>
-                <li>
-                  <span>Сливочное</span>
-                </li>
-                <li>
-                  <a href="#1.2">Щербеты</a>
-                </li>
-                <li>
-                  <a href="#1.3">Фруктовый лед</a>
-                </li>
-                <li>
-                  <a href="1.4">Мелорин</a>
-                </li>
-              </ul>
+              <div class="menu-dropdown">
+                <h3>Новинки</h3>
+                <ul>
+                  <li>
+                    <a href="#1.1">Сливочное</a>
+                  </li>
+                  <li>
+                    <a href="#1.2">Щербеты</a>
+                  </li>
+                  <li>
+                    <a href="#1.3">Фруктовый лед</a>
+                  </li>
+                  <li>
+                    <a href="#1.4">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
               <a href="#2">Доставка и оплата</a>
@@ -66,7 +68,7 @@
         <!-- </div> -->
         <form class="filter" name="icecreams-filter" action="#" method="get">
           <div class="block-filter">  <!-- triage -->
-            <p>Сортировка:</p>
+            <label for="triage-field">Сортировка:</label>
             <select id="triage-field" name="icecreams-triage">
               <option value="popularity">по популярности</option>
               <option value="expensive">сначала недорогие</option>
@@ -75,7 +77,7 @@
             </select>
           </div>
           <div class="block-filter">
-            <p>Цена: <span class="min-price">100</span> руб. - <span class="max-price">500</span></p>
+            <label for="price-field">Цена: <span class="min-price">100</span> руб. - <span class="max-price">500</span></label>
             <input id="price-field" type="range" name="icecreams-price" min="0" max="700" value="100"> <!-- как создать средствами html через элементы формы второй "ползунок"? (или верстать через div-ы) -->
           </div>
           <div class="block-filter">
@@ -198,7 +200,7 @@
         </div>
         <div class="info-supplier">
           <div>
-            <h3><a href="#">Для поставщиков</a></h3>      <!--  является ли значок "сердце" слева от заголовка ссылкой? -->
+            <a href="#"><b>Для поставщиков</b></a>      <!--  является ли значок "сердце" слева от заголовка ссылкой? -->
             <a href="#">О производстве</a>
           </div>
           <div>

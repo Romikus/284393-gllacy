@@ -17,7 +17,7 @@
           <nav>                        <!-- float: left -->
             <ul class="main-menu">
               <li>
-                <a href="#1">Каталог</a>
+                <a href="#1"><span>Каталог</span></a>
                 <!-- на странице по умолчанию div будет скрыт (display: none) -->
                 <div class="menu-dropdown">
                   <h3>Новинки</h3>
@@ -38,17 +38,17 @@
                 </div>
               </li>
               <li>
-                <a href="#2">Доставка и оплата</a>
+                <a href="#2"><span>Доставка и оплатаp</span></a>
               </li>
               <li>
-                <a href="#3">Каталог</a>
+                <a href="#3"><span>Каталог</span></a>
               </li>
             </ul>
           </nav>
           <div class="header-block-right">
-            <a class="mini-basket" href="#">Пусто</a>          <!-- float: right -->
-            <a class="user" href="#">Вход</a>                  <!-- float: right -->
-            <button class="search" type="button"></button>     <!-- float: right -->
+            <button class="search" type="button"></button>
+            <a class="user" href="#">Вход</a>
+            <a class="mini-basket" href="#">Пусто</a>
             <!-- на странице по умолчанию form будет скрыт (display: none) -->
             <form name="search" action="#" method="get">
               <input type="text" name="query" placeholder="Что ищем?" >
@@ -62,13 +62,15 @@
         <main>
           <div class="carousel">
             <h2>Крем-брюле и пломбир с малиновым джемом</h2>    <!-- по сути заголовок h2 сюда не совсем подходит, но более подходящего тега подобрать не смог -->
-            <div class="carousel-buttons">                      <!-- float: left -->
-              <button class="active" type="button"></button>
-              <button type="button"></button>
-              <button type="button"></button>
-            </div>
-            <div class="carousel-backet">        <!-- ?возможно потребуется для центровки вложенной кнопки? -->
-              <a href="#">Давайте оба!</a>       <!-- элемент ссылка, так как может быть осуществлен переход в карзину -->
+            <div class="block-carousel">
+              <div class="carousel-buttons">                      <!-- float: left -->
+                <button class="active" type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+              <div class="carousel-backet">        <!-- ?возможно потребуется для центровки вложенной кнопки? -->
+                <a href="#">Давайте оба!</a>       <!-- элемент ссылка, так как может быть осуществлен переход в карзину -->
+              </div>
             </div>
           </div>
           <section class="module-wrapper">

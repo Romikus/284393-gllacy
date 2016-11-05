@@ -1,9 +1,13 @@
 body {
+  margin: 0;
+  
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
+  
   color: #323232;
+  background-color: #849d8f;
 }
 
 h1,
@@ -27,7 +31,12 @@ h1,
   font-weight: 500;
 }
 .catalog-item h3 {
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
+  text-align: center;
+  
+  
 }
 
 form[name="search"],
@@ -41,51 +50,329 @@ form[name="search"],
 }
 
 .wrapper {
-  max-width: 1200px;
-  min-width: 900px;
+  max-width: 1146px;
+  min-width: 846px;
   margin: 0 auto;
-  background-color: antiquewhite;
+  padding: 0 27px;
+  background-color: antiquewhite;  /* для разметки сетки */
 }
 
-/* для отладки */
-/*
 header {
-  background: lightblue;
+  margin-top: 10px;
+  
+  background: lightblue;          /* для разметки сетки */
+  outline: 2px solid crimson;     /* для разметки сетки */
 }
 
 .logo {
   float: left;
+  margin-left: -7px;
+  margin-right: 15px;
+  
+  background-color: cadetblue;    /* для разметки сетки */
+  outline: 2px solid green;       /* для разметки сетки */
+}
+
+.logo img {
+  display: block;
+  width: 154px;
+  height: 64px;
 }
 
 nav {
   float: left;
+  padding: 16px 0;
+  
+  background-color: cornsilk;    /* для разметки сетки */
+  outline: 2px solid green;      /* для разметки сетки */
 }
 
 .main-menu {
-  background: orange;
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  line-height: 18px;
 }
 
 .main-menu > li {
-  background: lightgreen;
+  float: left;
+  /*margin-right: 20px;*/
+  
+}
+
+.main-menu > li a {
+  display: block;
+  padding: 7px 15px;
+  
+  text-decoration: none;
+  
+  border-radius: 16px;
+  background-color: coral;
+}
+
+.main-menu span {
+  border-bottom: 1px solid #9eb3a8;
+}
+
+
+.header-top-right {
+  float: right;
+  padding: 16px 0;
+  
+  font-size: 14px;
+  line-height: 16px;
+  
+  background-color: aquamarine;    /* для разметки сетки */
+  outline: 2px solid green;        /* для разметки сетки */
+}
+
+.search {
+  /*display: block;*/
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  
+  background-color: #9db1a5;
+  border: none;
+  border-radius: 50%;
+}
+
+.header-top-right a {
+  /*display: block;*/
+  float: left;
+  margin-left: 10px;
+  padding: 8px 15px;
+  
+  text-decoration: none;
+  
+  border-radius: 16px;
+  background-color: #9db1a5;
+}
+
+.header-top-right .user {
+  
+}
+
+.mini-basket {
+  min-width: 50px;
+  
+}
+
+.breadcrumbs {
   float: left;
 }
 
-.mini-basket,
-.user,
-.search {
-  float: right;
+.header-bottom {
+  /*clear: both;*/
+  
+  color: #fff;
+  background-color: darkgray;    /* для разметки сетки */
+  outline: 2px solid green;      /* для разметки сетки */
 }
 
-.header-info,
-.breadcrumbs {
-  clear: both;
-}
-.info-time,
-.info-phone {
+.header-bottom p {
   text-align: right;
   margin: 0;
 }
+
+main {
+  outline: 2px solid crimson;    /* для разметки сетки */
+}
+
+.carousel {
+  margin-top: 285px;
+  margin-bottom: 40px;
+  
+  background-color: cadetblue;    /* для разметки сетки */
+  outline: 2px solid green;       /* для разметки сетки */
+}
+
+.carousel h2 {
+  text-align: center;
+  margin-left: 230px;
+  margin-right: 230px;
+}
+
+.block-carousel {
+  position: relative;
+  
+  outline: 2px solid blue;      /* для разметки сетки */
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*float: left;*/
+}
+
+.carousel-backet {
+  text-align: center;
+}
+
+.carousel-backet a {
+  display: block;
+}
+
+.module-wrapper {
+  margin-bottom: 40px;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.module-wrapper .module {
+  width: 520px;
+  height: 190px;
+  padding: 20px;
+  
+  border-radius: 10px;
+  background-color: brown;    /* для разметки сетки */
+}
+
+.module-wrapper .module-left {
+  float: left;
+}
+
+.module-wrapper .module-right {
+  float: right;
+}
+
+.filter {
+  margin-bottom: 40px;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.catalog {
+  /*margin-bottom: 35px;*/
+  
+  font-size: 0;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 267px;
+  margin-right: 26px;
+  margin-bottom: 40px;
+  
+  font-size: 45px;
+  line-height: 45px;
+  vertical-align: top;
+  
+  outline: 2px solid blue;    /* для разметки сетки */
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.catalog-item h3 a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.description {
+  padding: 25px 20px;
+  margin-bottom: 40px;
+  
+  background-color: #eee3cb;
+  outline: 2px solid green;      /* для разметки сетки */
+}
+
+.description-col {
+  float: left;
+  width: 484px;
+  margin-left: 56px;
+  margin-right: 26px;
+}
+
+.description-col:nth-child(2n) {
+  margin-right: 0;
+}
+
+.container {
+  margin-bottom: 40px
+}
+
+.news,
+.subscription {
+  width: 560px;
+  height: 220px;
+  
+  border-radius: 10px;
+  background-color: #fff;
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.news {
+  float: left;
+}
+
+.subscription {
+  float: right;
+}
+
+.map {
+  max-width: 1146px;
+  height: 370px;
+  padding: 0 27px;
+  padding-top: 62px;
+  margin: 0 auto;
+  
+  background-image: url(../img/map.jpg);
+  background-color: #e8e2c8;
+  outline: 2px solid crimson;    /* для разметки сетки */
+}
+
+.contacts {
+  float: right;
+  width: 252px;
+  padding: 30px 25px;
+  
+  border-radius: 10px;
+  
+  background-color: #fff;
+}
+
+/*
+.contacts b {
+  display: inline-block;
+}
 */
+
+footer {
+  outline: 2px solid crimson;    /* для разметки сетки */
+}
+
+.socials {
+  float: left;
+  width: 267px;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.info-supplier {
+  float: left;
+  width: 560px;
+  margin-left: 26px;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.footer-logo {
+  float: right;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -254,15 +254,19 @@ main {
   outline: 2px solid green;    /* для разметки сетки */
 }
 
+.catalog-row {
+  margin-bottom: 40px;
+}
+
 .catalog-item {
-  display: inline-block;
+  /*display: inline-block;*/
+  float: left;
   width: 267px;
   margin-right: 26px;
-  margin-bottom: 40px;
   
   font-size: 45px;
   line-height: 45px;
-  vertical-align: top;
+  /*vertical-align: top;*/
   
   outline: 2px solid blue;    /* для разметки сетки */
 }

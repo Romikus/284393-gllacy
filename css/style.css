@@ -108,11 +108,17 @@ nav {
 }
 
 .main-menu > li {
+  position: relative;
+  
   float: left;
   /*margin-right: 20px;*/
 }
 
-.main-menu > li a {
+.main-menu > li:hover .menu-dropdown {
+  display: block;
+}
+
+.main-menu > li > a {
   display: block;
   padding: 7px 14px;
   
@@ -127,28 +133,99 @@ nav {
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-.main-menu > li a:hover {
+.main-menu > li > a:hover {
   color: #333;
   background-color: #f7f6f3;
 }
 
-.main-menu > li a:hover span,
-.main-menu > li a:active span {     /* active - чтобы не сбрасывалось свойство, если зажать ссылку и понять */
+.main-menu > li > a:hover span,
+.main-menu > li > a:active span {     /* active - чтобы не сбрасывалось свойство, если зажать ссылку и понять */
   border-bottom: none;
 }
 
-.main-menu > li a:active {
+.main-menu > li > a:active {
   color: #333;                       /* чтобы не сбрасывалось свойство, если зажать ссылку и понять */
   background-color: #ededed;         /* чтобы не сбрасывалось свойство, если зажать ссылку и понять */
   box-shadow: 0 -2px 1px 0px #696969;
 }
 
-.main-menu .main-menu-active a {
+.main-menu .menu-active > a {
   background-color: #d07058;
 }
 
-.main-menu .main-menu-active span {
+.menu-dropdown .menu-active > a {
+  color: #fff;
+}
+
+.main-menu .menu-active span {
   border-bottom: none;
+}
+
+/* выпадающее меню */
+.menu-dropdown {            /* обертка для выпадающего меню с отступом сверху, чтобы при переходе не пропадало выпадающее меню */
+  position: absolute;
+  top: auto;
+  left: auto;
+  z-index: 20;
+  
+/*  display: block;*/
+  margin-left: -7px;
+  padding-top: 5px;
+  
+  background-color: transparent;
+}
+
+.menu-dropdown > div {
+  width: 143px;
+  
+  font-size: 14px;
+  line-height: 16px;
+  
+  color: #323232;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+}
+
+.menu-dropdown h3 {
+  margin: 0 9px 0 6px;
+  padding: 11px 14px;
+  
+  font-size: inherit;
+  
+  border-bottom: 1px solid #d1d0ce;
+}
+
+.menu-dropdown ul {
+  margin: 0;
+  padding: 4px 0;
+  
+  list-style: none;
+}
+
+.menu-dropdown li {
+/*  height: 28px;*/
+  
+/*  background: orange;*/
+  margin-bottom: 3px;
+}
+
+.menu-dropdown a {
+  display: block;
+  padding: 6px 10px 6px 21px;
+  
+  font-weight: normal;
+  text-decoration: none;
+  
+  color: inherit;
+}
+
+.menu-dropdown a:hover {
+  background-color: #fbded7;
+}
+
+.menu-dropdown a:active {
+  background-color: #f6b5a5;
 }
 
 /* правый блок шапки */
@@ -1275,7 +1352,7 @@ footer {
 /*  outline: 2px solid crimson;     для разметки сетки */
 }
 
-.fotter-line {
+.footer-line {
   border-top: 1px solid rgba(255,255,255,0.3);
 }
 

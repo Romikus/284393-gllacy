@@ -27,21 +27,23 @@
                     <a href="#1"><span>Каталог</span></a>
                     <!-- на странице по умолчанию div будет скрыт (display: none) -->
                     <div class="menu-dropdown">
-                      <h3>Новинки</h3>
-                      <ul>
-                        <li>
-                          <a href="#1.1">Сливочное</a>
-                        </li>
-                        <li>
-                          <a href="#1.2">Щербеты</a>
-                        </li>
-                        <li>
-                          <a href="#1.3">Фруктовый лед</a>
-                        </li>
-                        <li>
-                          <a href="#1.4">Мелорин</a>
-                        </li>
-                      </ul>
+                      <div>
+                        <h3>Новинки</h3>
+                        <ul>
+                          <li>
+                            <a href="#1.1">Сливочное</a>
+                          </li>
+                          <li>
+                            <a href="#1.2">Щербеты</a>
+                          </li>
+                          <li>
+                            <a href="#1.3">Фруктовый лед</a>
+                          </li>
+                          <li>
+                            <a href="#1.4">Мелорин</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </li>
                   <li>
@@ -57,9 +59,11 @@
                 <a class="user" href="#">Вход</a>
                 <button class="search" type="button"></button>
                 <!-- на странице по умолчанию form будет скрыт (display: none) -->
-                <form name="search" action="#" method="get">
-                  <input type="text" name="query" placeholder="Что ищем?" >
-                </form>
+                <div class="block-search">
+                  <form name="search" action="#" method="get">
+                    <input type="text" name="query" placeholder="Что ищем?" >
+                  </form>
+                <div>
               </div>
             </div>
             <div class="header-bottom">
@@ -102,7 +106,7 @@
             <div class="catalog">
               <div class="catalog-row clearfix">
                 <article class="catalog-item hit">
-                  <img class="product" src="img/ice_orange.png" width="267" height="267" alt="ice cream">
+                  <img class="product" src="img/ice_orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                   <!-- <img class="hit" src="img/hit.png" alt="hit"> -->   <!-- реализация через :before -->
                   <div class="product-price">310₽<span>/кг</span></div>
                   <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>  <!-- дополнительно обернул в h3, так как является названием продукта -->
@@ -111,7 +115,7 @@
                   </div>
                 </article>
                 <article class="catalog-item hit">
-                  <img class="product" src="img/ice_coffee.png" width="267" height="267" alt="ice cream">
+                  <img class="product" src="img/ice_coffee.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                   <!-- <img class="hit" src="img/hit.png" alt="hit"> -->   <!-- реализация через :before -->
                   <div class="product-price">380₽<span>/кг</span></div>
                   <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
@@ -120,7 +124,7 @@
                   </div>
                 </article>
                 <article class="catalog-item hit">
-                  <img class="product" src="img/ice_strawberry.png" width="267" height="267" alt="ice cream">
+                  <img class="product" src="img/ice_strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                   <!-- <img class="hit" src="img/hit.png" alt="hit"> -->   <!-- реализация через :before -->
                   <div class="product-price">355₽<span>/кг</span></div>
                   <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
@@ -129,7 +133,7 @@
                   </div>
                 </article>
                 <article class="catalog-item hit">
-                  <img class="product" src="img/ice_cream.png" width="267" height="267" alt="ice cream">
+                  <img class="product" src="img/ice_cream.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                   <!-- <img class="hit" src="img/hit.png" alt="hit"> -->   <!-- реализация через :before -->
                   <div class="product-price">415₽<span>/кг</span></div>
                   <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>

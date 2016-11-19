@@ -53,13 +53,26 @@
               </div>
               <div class="user">
                 <a href="#">Вход</a>
+                <div class="block-user">
+                  <form name="entry" action="#" method="post">
+                    <label for="email-entry">Электронная почта</label>
+                    <input id="email-entry" type="email" name="email-entry" placeholder="Электронная почта">
+                    <label for="password-entry">Пароль</label>
+                    <input id="password-entry" type="password" name="password-entry" placeholder="Пароль">
+                    <button class="style-orange" type="submit">Войти</button>
+                    <div>
+                      <a href="#"><span>Забыли пароль?</span></a>
+                      <a href="#"><span>Новая регистрация</span></a>
+                    </div>
+                  </form>
+                </div>
               </div>
               <div class="search">
                 <button type="button"></button>
                 <!-- на странице по умолчанию form будет скрыт (display: none) -->
                 <div class="block-search">
                   <form name="search" action="#" method="get">
-                    <input type="text" name="query" placeholder="Что ищем?" >
+                    <input type="search" name="query" placeholder="Что ищем?" >
                   </form>
                 </div>
               </div>

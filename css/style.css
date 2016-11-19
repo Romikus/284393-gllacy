@@ -62,11 +62,13 @@ h1 {
   text-align: center; 
 }
 
-form[name="search"],
+/*
+.block-search,
 .menu-dropdown {
   position: absolute;
   display: none;
 }
+*/
 
 .wrapper {
   width: 1146px;
@@ -133,19 +135,19 @@ nav {
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-.main-menu > li > a:hover {
+.main-menu > li:hover > a {
   color: #333;
   background-color: #f7f6f3;
 }
 
-.main-menu > li > a:hover span,
-.main-menu > li > a:active span {     /* active - чтобы не сбрасывалось свойство, если зажать ссылку и понять */
+.main-menu > li:hover span,
+.main-menu > li > a:active span {     /* active - чтобы не сбрасывалось свойство, если зажать ссылку и потянуть */
   border-bottom: none;
 }
 
 .main-menu > li > a:active {
-  color: #333;                       /* чтобы не сбрасывалось свойство, если зажать ссылку и понять */
-  background-color: #ededed;         /* чтобы не сбрасывалось свойство, если зажать ссылку и понять */
+  color: #333;                       /* чтобы не сбрасывалось свойство, если зажать ссылку и потятуть */
+  background-color: #ededed;         /* чтобы не сбрасывалось свойство, если зажать ссылку и потянуть */
   box-shadow: 0 -2px 1px 0px #696969;
 }
 
@@ -168,7 +170,7 @@ nav {
   left: auto;
   z-index: 20;
   
-/*  display: block;*/
+  display: none;
   margin-left: -7px;
   padding-top: 5px;
   
@@ -230,6 +232,8 @@ nav {
 
 /* правый блок шапки */
 .header-top-right {
+  position: relative;
+  
   float: right;
   max-width: 290px;
   padding: 14px 0 18px 0;
@@ -239,14 +243,21 @@ nav {
   font-weight: 500;
 }
 
-.search,
-.user,
-.mini-basket {
+.header-top-right > div {
+  position: relative;
+  
+  float: right;
+}
+
+.search button,
+.user a,
+.mini-basket a {
   position: relative;
 }
 
-.search {
-  float: right;
+.search button {
+/*  float: right;*/
+  display: block;
   width: 32px;
   height: 32px;
   margin: 0;
@@ -257,7 +268,7 @@ nav {
   border-radius: 50%;
 }
 
-.search::before {
+.search button::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -272,16 +283,115 @@ nav {
   background-position: -5px -5px;
 }
 
-.search:hover {
+.search:hover button {
   background-color: #f8f7f4;
 }
 
-.search:hover::before {
+.search:hover .block-search {
+  display: block;
+}
+
+.search:hover button::before {
   background-position: -32px -5px;
 }
 
-.header-top-right a {
-  float: right;
+/* форма поиска */
+.block-search {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  z-index: 20;
+  
+  display: none;
+  padding-top: 4px;
+  
+  background-color: transparent;
+}
+
+.block-search form {
+  padding: 20px 15px;
+  
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+}
+
+.block-search input {
+  width: 281px;
+  height: 44px;
+  padding: 0 15px;
+  
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #d3d3d2;
+  outline: none;
+}
+
+.block-search input::-webkit-input-placeholder,
+.block-user input::-webkit-input-placeholder {
+  font-weight: normal;
+  
+  color: #999;
+}
+
+.block-search input::-moz-placeholder,
+.block-user input::-moz-placeholder {
+  font-weight: normal;
+  
+  color: #999;
+}
+
+.block-search input:-moz-placeholder,
+.block-user input:-moz-placeholder {
+  font-weight: normal;
+  
+  color: #999;
+}
+
+.block-search input:-ms-input-placeholder,
+.block-user input:-ms-input-placeholder {
+  font-weight: normal;
+  
+  color: #999;
+}
+
+.block-search input:hover,
+.block-user input:hover {
+  box-shadow: inset 0 0 0 2px #c7c6c5;
+}
+
+.block-search input:focus,
+.block-user input:focus {
+  box-shadow: inset 0 0 0 2px #8fbdec;
+}
+
+.block-search input:focus::-webkit-input-placeholder,
+.block-user input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.block-search input:focus::-moz-placeholder,
+.block-user input:focus::-moz-placeholder{
+  color: transparent;
+}
+
+.block-search input:focus:-moz-placeholder,
+.block-user input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.block-search input:focus:-ms-input-placeholder,
+.block-user input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.header-top-right > div > a {
+/*  float: right;*/
+  display: block;
   margin-left: 10px;
   padding: 8px 15px 8px 45px;
   
@@ -292,7 +402,7 @@ nav {
   border-radius: 16px;
 }
 
-.user::before {
+.user > a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -306,21 +416,124 @@ nav {
   background-position: -59px -5px;
 }
 
-.user:hover {
+.user:hover > a {
   color: #333;
   background-color: #f8f7f4;
 }
 
-.user:hover::before {
+.user:hover > a::before {
   background-position: -90px -5px;
 }
 
-.mini-basket {
+.user:hover .block-user {
+  display: block;
+}
+
+/* Форма входа */
+.block-user {
+  position: absolute;
+  top: 32px;
+  right: -2px;
+  z-index: 20;
+  
+  display: none;
+  padding-top: 4px;
+  
+  background-color: transparent;
+}
+
+.block-user form {
+  width: 241px;
+  padding: 5px 17px 22px 19px;
+  
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+}
+
+.block-user label {
+  display: block;
+  margin-bottom: 2px;
+  margin-left: 15px;
+  visibility: hidden;
+  
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: normal;
+  
+  color: #999;
+}
+
+.block-user input {
+  display: block;
+  width: 211px;
+  height: 44px;
+  margin-bottom: 5px;
+  padding: 0 15px;
+  
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #d3d3d2;
+  outline: none;
+}
+
+.block-user button {
+  width: 100px;
+  height: 44px;
+  margin-top: 15px;
+  
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  
+  color: #fefefe;
+  border: none;
+  border-radius: 18px;
+  outline: none;
+}
+
+.block-user div {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 18px;
+  
+  vertical-align: top;
+}
+
+.block-user a {
+  display: block;
+  
+  font-size: 13px;
+  line-height: 21px;
+  text-decoration: none;
+  
+  color: #323232;
+}
+
+.block-user a > span {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.block-user a:hover,
+.block-user a:active {
+  color: #e84d37;
+}
+
+.block-user a:hover span,
+.block-user a:active span {
+  border-color: rgba(236,89,60,0.3);
+}
+
+.mini-basket a{
   min-width: 58px;
   max-width: 80px;
 }
 
-.mini-basket::before {
+.mini-basket a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -334,12 +547,12 @@ nav {
   background-position: -121px -5px;
 }
 
-.header-top-right .basket-full {
+.header-top-right .basket-full a{
   color: #333;
   background-color: #f8f7f4;
 }
 
-.basket-full::before {
+.basket-full a::before {
   background-position: -152px -5px;
 }
 

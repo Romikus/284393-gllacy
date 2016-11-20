@@ -24,7 +24,7 @@
               <nav>                        <!-- float: left -->
                 <ul class="main-menu">
                   <li>
-                    <a href="#1"><span>Каталог</span></a>
+                    <a href="icecreams.html"><span>Каталог</span></a>
                     <!-- на странице по умолчанию div будет скрыт (display: none) -->
                     <div class="menu-dropdown">
                       <div>
@@ -63,9 +63,9 @@
                   <div class="block-user">
                     <form name="entry" action="#" method="post">
                       <label for="email-entry">Электронная почта</label>
-                      <input id="email-entry" type="email" name="email-entry" placeholder="Электронная почта">
+                      <input id="email-entry" type="email" name="email-entry" placeholder="Электронная почта" required>
                       <label for="password-entry">Пароль</label>
-                      <input id="password-entry" type="password" name="password-entry" placeholder="Пароль">
+                      <input id="password-entry" type="password" name="password-entry" placeholder="Пароль" required>
                       <button class="style-orange" type="submit">Войти</button>
                       <div>
                         <a href="#"><span>Забыли пароль?</span></a>
@@ -235,6 +235,19 @@
             </div>
           </footer>
         </div>
+        <div class="modal-content">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+          <b>Мы обязательно вам ответим!</b>
+          <form class="feedback-form" action="#" method="post">
+            <label for="user-name">Как вас зовут?</label>
+            <input id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+            <label for="user-email">Ваша почта для ответа?</label>
+            <input id="user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?" required>
+            <textarea name="user-text" placeholder="Напишите что-нибудь..."></textarea>
+            <button class="style-orange" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="modal-overlay"></div>
       </div>
     </div>
   </body>

@@ -50,15 +50,50 @@
             <div class="header-top-right">
               <div class="mini-basket basket-full">
                 <a href="#">2 товара</a>
+                <div class="block-basket">
+                  <div class="clearfix">
+                    <table>
+                      <tr>
+                        <td class="img-product">
+                          <button class="remove-product" type="button" title="Удалить">Удалить</button>
+                          <img src="img/ice_orange_mini.png" width="33" height="33" alt="Пломбир с апельсиновым джемо">
+                        </td>
+                        <td class="name-product">Пломбир с апельсиновым джемом</td>
+                        <td class="price-product-basket">1,5 кг х <span>200 руб.</span></td>
+                        <td class="total-price-product">300 руб.</td>
+                      </tr>
+                      <tr>
+                        <td class="img-product">
+                          <button class="remove-product" type="button" title="Удалить">Удалить</button>
+                          <img src="img/ice_strawberry_mini.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколадар">
+                        </td>
+                        <td class="name-product">Клубничный пломбир с присыпкой из белого шоколадар</td>
+                        <td class="price-product-basket">1,5 кг х <span>300 руб.</span></td>
+                        <td class="total-price-product">450 руб.</td>
+                      </tr>
+                    </table>
+                    <div class="total-price-basket">Итого: 750 руб.</div>
+                    <a class="checkout-basket style-orange" href="#">Оформить заказ</a>
+                    <!--
+                    <div class="table-basket">
+                      <div class="row-table-basket">
+                        <div class="name-product">11fgf</div>
+                        <div class="price-product-basket">22wlkj 89798 987 98798 798 798 798 79 87 9</div>
+                        <div class="total-price-product">33alkv</div>
+                      </div>
+                    </div>
+                    -->
+                  </div>
+                </div>
               </div>
               <div class="user">
                 <a href="#">Вход</a>
                 <div class="block-user">
                   <form name="entry" action="#" method="post">
                     <label for="email-entry">Электронная почта</label>
-                    <input id="email-entry" type="email" name="email-entry" placeholder="Электронная почта">
+                    <input id="email-entry" type="email" name="email-entry" placeholder="Электронная почта" required>
                     <label for="password-entry">Пароль</label>
-                    <input id="password-entry" type="password" name="password-entry" placeholder="Пароль">
+                    <input id="password-entry" type="password" name="password-entry" placeholder="Пароль" required>
                     <button class="style-orange" type="submit">Войти</button>
                     <div>
                       <a href="#"><span>Забыли пароль?</span></a>
@@ -293,6 +328,19 @@
             <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
           </div>
         </footer>
+        <div class="modal-content">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+          <b>Мы обязательно вам ответим!</b>
+          <form class="feedback-form" action="#" method="post">
+            <label for="user-name">Как вас зовут?</label>
+            <input id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+            <label for="user-email">Ваша почта для ответа?</label>
+            <input id="user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?" required>
+            <textarea name="user-text" placeholder="Напишите что-нибудь..."></textarea>
+            <button class="style-orange" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="modal-overlay"></div>
       </div>
     </div>
   </body>

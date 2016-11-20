@@ -11,14 +11,14 @@
   </head>
   <body>
     <div class="site-wrapper style-gradient">
-      <div class="wrapper">      <!-- для центровки содержимого всего сайта -->
+      <div class="wrapper">      <!-- для центровки контента сайта -->
         <header>
           <div class="header-top clearfix">
             <a class="logo" href="#main"><img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop logo"></a>
             <nav>
               <ul class="main-menu">
                 <li class="menu-active">
-                  <a href="№1"><span>Каталог</span></a>
+                  <a href="icecreams.html"><span>Каталог</span></a>
                   <div class="menu-dropdown">
                     <div>
                       <h3>Новинки</h3>
@@ -74,15 +74,6 @@
                     </table>
                     <div class="total-price-basket">Итого: 750 руб.</div>
                     <a class="checkout-basket style-orange" href="#">Оформить заказ</a>
-                    <!--
-                    <div class="table-basket">
-                      <div class="row-table-basket">
-                        <div class="name-product">11fgf</div>
-                        <div class="price-product-basket">22wlkj 89798 987 98798 798 798 798 79 87 9</div>
-                        <div class="total-price-product">33alkv</div>
-                      </div>
-                    </div>
-                    -->
                   </div>
                 </div>
               </div>
@@ -104,7 +95,6 @@
               </div>
               <div class="search">
                 <button type="button"></button>
-                <!-- на странице по умолчанию form будет скрыт (display: none) -->
                 <div class="block-search">
                   <form name="search" action="#" method="get">
                     <input type="search" name="query" placeholder="Что ищем?" >
@@ -126,9 +116,7 @@
           </div>
         </header>
         <main>
-          <!-- <div class="heading"> -->
           <h1 class="heading">Сливочное мороженое</h1>
-          <!-- </div> -->
           <form class="filter clearfix" name="icecreams-filter" action="#" method="get">
             <div class="block-filter filter-triage">
               <label for="triage-field">Сортировка:</label>
@@ -142,10 +130,6 @@
               </div>
             </div>
             <div class="block-filter filter-price">
-              <!--
-              <label for="price-field">Цена: <span class="min-price">100</span> руб. - <span class="max-price">500</span> руб.</label>
-              <input id="price-field" type="range" name="icecreams-price" min="0" max="700" value="100">
-              -->
               <p>Цена: <label for="min-price">100</label> руб. – <label for="max-price">500</label> руб.</p>
               <input id="min-price" type="text" name="min-price">
               <input id="max-price" type="text" name="max-price">
@@ -185,9 +169,6 @@
                 <label for="checkbox-5">джемы</label>
               </div>
             </div>
-            <!--
-            <button type="submit" name="button-filter">Применить</button>
-            -->
             <a class="button-filter" href="#">Применить</a>
           </form>
           <div class="catalog">
@@ -306,7 +287,7 @@
             </div>
           </div>
         </main>
-        <footer class="footer-line clearfix">                     <!-- класс для отрисовки линии -->
+        <footer class="footer-line clearfix">
           <div class="socials">
             <a href="http://twitter.com/" class="socials-icon twitter"><span>twitter</span></a>
             <a href="http://instagram.com/" class="socials-icon instagram"><span>instagram</span></a>

@@ -15,17 +15,16 @@
     <input id="switch-3" type="radio" name="switch">
     <div class="site-wrapper">  
       <div class="outer-wrapper">
-        <div class="wrapper">            <!-- для центровки содержимого всего сайта -->
+        <div class="wrapper">            <!-- для центровки контента сайта -->
           <header>
             <div class="header-top clearfix">
-              <div class="logo">           <!-- float: left -->
+              <div class="logo">
                 <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop logo">
               </div>
-              <nav>                        <!-- float: left -->
+              <nav>
                 <ul class="main-menu">
                   <li>
                     <a href="icecreams.html"><span>Каталог</span></a>
-                    <!-- на странице по умолчанию div будет скрыт (display: none) -->
                     <div class="menu-dropdown">
                       <div>
                         <h3>Новинки</h3>
@@ -76,7 +75,6 @@
                 </div>
                 <div class="search">
                   <button type="button"></button>
-                  <!-- на странице по умолчанию form будет скрыт (display: none) -->
                   <div class="block-search">
                     <form name="search" action="#" method="get">
                       <input type="search" name="query" placeholder="Что ищем?" >
@@ -111,31 +109,29 @@
               </div>
             </div>
             <section class="module-wrapper clearfix">
-              <div class="module module-left">           <!-- изображение баннера фоновое, задается для div -->
+              <div class="module module-left">
                 <h3>Малинка даром!</h3>
                 <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <a class="style-orange" href="#">Хочу варенье!</a>       <!-- ссылка, т.к. необходимо перейти на страницу заказа -->
+                <a class="style-orange" href="#">Хочу варенье!</a>
               </div>
-              <div class="module module-right">           <!-- изображение баннера фоновое, задается для div -->
+              <div class="module module-right">
                 <h3>Шоколадки даром!</h3>
                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
-                <a class="style-orange" href="#">Хочу шоколадки!</a>     <!-- ссылка, т.к. необходимо перейти на страницу заказа -->
+                <a class="style-orange" href="#">Хочу шоколадки!</a>
               </div>
             </section>
             <div class="catalog">
               <div class="catalog-row clearfix">
                 <article class="catalog-item hit">
                   <img class="product" src="img/ice_orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                  <!-- <img class="hit" src="img/hit.png" alt="hit"> -->   <!-- реализация через :before -->
                   <div class="product-price">310₽<span>/кг</span></div>
-                  <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>  <!-- дополнительно обернул в h3, так как является названием продукта -->
+                  <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
                   <div class="container-review">
                     <a class="review style-orange" href="#">Быстрый просмотр</a>
                   </div>
                 </article>
                 <article class="catalog-item hit">
                   <img class="product" src="img/ice_coffee.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-                  <!-- <img class="hit" src="img/hit.png" alt="hit"> -->   <!-- реализация через :before -->
                   <div class="product-price">380₽<span>/кг</span></div>
                   <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
                   <div class="container-review">
@@ -144,7 +140,6 @@
                 </article>
                 <article class="catalog-item hit">
                   <img class="product" src="img/ice_strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                  <!-- <img class="hit" src="img/hit.png" alt="hit"> -->   <!-- реализация через :before -->
                   <div class="product-price">355₽<span>/кг</span></div>
                   <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                   <div class="container-review">
@@ -153,7 +148,6 @@
                 </article>
                 <article class="catalog-item hit">
                   <img class="product" src="img/ice_cream.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-                  <!-- <img class="hit" src="img/hit.png" alt="hit"> -->   <!-- реализация через :before -->
                   <div class="product-price">415₽<span>/кг</span></div>
                   <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
                   <div class="container-review">
@@ -186,11 +180,11 @@
                 <p>Новое в нашем блоге</p>
                 <h3><a href="#">10  способов сервировки фруктовых щербетов к столу</a></h3>
               </div>
-              <div class="subscription">        <!-- для блока задается фоновое изображение, которое будет рамкой для form -->
+              <div class="subscription">
                 <form action="#" method="post">
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                   <div class="subscription-form clearfix">
-                    <label for="subs-email">Электронная почта</label>       <!-- будет отображаться, когда фокус в поле ввода, а по умолчанию будет скрыт -->
+                    <label for="subs-email">Электронная почта</label>
                     <input id="subs-email" type="email" name="subs-email" placeholder="Электронная почта" required>
                     <button class="style-orange" type="submit">Отправить</button>
                   </div>

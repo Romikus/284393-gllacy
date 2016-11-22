@@ -45,13 +45,17 @@ button.addEventListener("click", function(event) {
 close.addEventListener("click", function(event) {
   event.preventDefault();
   formModal.classList.remove("modal-content-show");
+  formModal.classList.remove("modal-content-error");
   layer.classList.remove("modal-overlay-show");
 });
 
 form.addEventListener("submit", function(event) {
   if (!userEmail.value) {
     event.preventDefault();
-    console.log("Нужно ввести Email");
+    //console.log("Нужно ввести Email");
+    formModal.classList.remove("modal-content-error");
+    formModal.offsetWidth = formModal.offsetWidth;
+    formModal.classList.add("modal-content-error");
   } else {
     localStorage.setItem("userEmail", userEmail.value);
   }
@@ -69,6 +73,7 @@ window.addEventListener("keydown", function(event) {
       layer.classList.remove("modal-overlay-show");
     }
   }
+  formModal.classList.remove("modal-content-error");
 });
 
 userName.addEventListener("focus", function(event) {

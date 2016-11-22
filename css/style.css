@@ -64,11 +64,8 @@ h1 {
 }
 
 .wrapper {
-/*  width: 1146px;*/
-  margin: 0 auto;
-/*  padding: 0 27px;*/
-  
   width: 95.4%;
+  margin: 0 auto;
   padding: 0 2.3%
 }
 
@@ -92,7 +89,6 @@ header {
 /* навигация + главное меню */
 nav {
   float: left;
-/*  width: 680px;*/
   width: 50%;
   padding: 14px 0 18px 0;
 }
@@ -163,7 +159,7 @@ nav {
 }
 
 /* выпадающее меню */
-.menu-dropdown {            /* обертка для выпадающего меню с отступом сверху, чтобы при переходе не пропадало выпадающее меню */
+.menu-dropdown {
   position: absolute;
   top: auto;
   left: auto;
@@ -733,7 +729,6 @@ nav {
   position: absolute;
   bottom: 4px;
   
-/*  width: 850px;*/
   width: 60%;
 }
 
@@ -922,11 +917,8 @@ input[name="switch"] {
 .module-wrapper .module {
   position: relative;
   
-/*  width: 520px;*/
   width: 45.4%;
-  
   height: 190px;
-/*  padding: 17px 20px 23px 20px;*/
   padding: 17px 1.75% 23px 1.75%;
   
   color: #fff;
@@ -1038,7 +1030,7 @@ input[name="switch"] {
   background-color: transparent;
   border: none;
   outline: none;
-  -webkit-appearance: none;    /* отменяет стандартное отображение select (убирает отступы, стандартную стрелку, а главное убирает в safari градиент у фона) */
+  -webkit-appearance: none;
   -moz-appearance: none;
 }
 
@@ -1243,8 +1235,6 @@ input[name="switch"] {
   position: relative;
   
   float: left;
-/*  width: 267px;*/
-/*  margin-right: 26px;*/
   width: 23.3%;
   margin-right: 2.26%;
 }
@@ -1349,7 +1339,6 @@ input[name="switch"] {
 
 .catalog-item .review {
   display: inline-block;
-/*  max-width: 267px;*/
   max-width: 100%;
   margin: 0 auto;
   margin-top: 17px;
@@ -1420,7 +1409,6 @@ input[name="switch"] {
   margin-left: -7px;
   
   -webkit-transform: rotate(-45deg);
-  
           transform: rotate(-45deg);
 }
 
@@ -1503,9 +1491,7 @@ input[name="switch"] {
   position: relative;
   
   float: left;
-/*  width: 480px;*/
   width: 43.2%;
-/*  margin-right: 26px;*/
   margin-right: 2.6%;
   padding-left: 57px;
   padding-right: 3px;
@@ -1562,7 +1548,6 @@ input[name="switch"] {
 /* Новости */
 .news {
   float: left;
-/*  width: 520px;*/
   width: 45.42%;
   height: 174px;
   padding: 23px 20px;
@@ -1579,7 +1564,6 @@ input[name="switch"] {
 
 .news h3 {
   margin: 4px 0;
-/*  margin-right: 230px;*/
   margin-right: 45%;
   
   font-size: 24px;
@@ -1597,7 +1581,6 @@ input[name="switch"] {
 /* Подписка */
 .subscription {
   float: right;
-/*  width: 549px;*/
   width: 47.95%;
   height: 210px;
   
@@ -1609,7 +1592,6 @@ input[name="switch"] {
 }
 
 .subscription form {
-/*  width: 507px;*/
   width: 92.35%;
   height: 170px;
   padding: 20px 21px;
@@ -1696,12 +1678,11 @@ input[name="switch"] {
 .map {
   position: relative;
   
-/*  width: 1200px;*/
   width: 100%;
   height: 430px;
   margin: 0 auto;
   
-  background-color: #e8e2c8;
+  background: #e8e2c8 url("../img/map.jpg") no-repeat;
 }
 
 .map img {
@@ -1755,7 +1736,6 @@ input[name="switch"] {
 }
 
 /* Подвал */
-
 .footer-line {
   border-top: 1px solid rgba(255,255,255,0.3);
 }
@@ -1763,7 +1743,6 @@ input[name="switch"] {
 /* Контакты соц. сетей */
 .socials {
   float: left;
-/*  width: 300px;*/
   width: 26.2%;
   padding-top: 35px;
   padding-bottom: 30px;
@@ -1813,9 +1792,7 @@ input[name="switch"] {
 /* Информация поставщикам */
 .info-supplier {
   float: left;
-/*  width: 460px;*/
   width: 40.2%;
-/*  margin-left: 100px;*/
   margin-left: 8.7%;
   padding-top: 33px;
   padding-bottom: 29px;
@@ -1876,7 +1853,6 @@ input[name="switch"] {
 /* Информация о разработчике */
 .footer-logo {
   float: right;
-/*  max-width: 260px;*/
   max-width: 22.7%;
   padding-top: 18px;
   padding-bottom: 24px;

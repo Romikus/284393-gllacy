@@ -22,6 +22,7 @@ textarea {
 }
 
 .style-gradient {
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.2) 0%, transparent 40%);
   background-image: linear-gradient(rgba(255,255,255,0.2) 0%, transparent 40%);
 }
 
@@ -659,11 +660,13 @@ nav {
 }
 
 .remove-product::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .remove-product::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .block-basket .name-product {
@@ -891,18 +894,21 @@ input[name="switch"] {
 /* стилизация кнопок */
 .style-orange {
   color: #fff;
+  background: -webkit-linear-gradient(#f26843, #e74b35);
   background: linear-gradient(#f26843, #e74b35);
   box-shadow: 0 2px 1px 0 #9e4334;
   text-shadow: 0 2px 5px #954f3d;
 }
 
 .style-orange:hover {
+  background: -webkit-linear-gradient(#f58669, #ec6f5e);
   background: linear-gradient(#f58669, #ec6f5e);
   box-shadow: 0 2px 1px 0 #ac1000;
   text-shadow: 0 2px 5px #cc523b;
 }
 
 .style-orange:active {
+  background: -webkit-linear-gradient(#d74632, #e1613e);
   background: linear-gradient(#d74632, #e1613e);
   box-shadow: inset 0 2px 1px 0 #952718;
   text-shadow: 0 2px 5px #954f3d;
@@ -1413,28 +1419,33 @@ input[name="switch"] {
   margin-top: -4px;
   margin-left: -7px;
   
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  
+          transform: rotate(-45deg);
 }
 
 .paginator .prev::after {
   margin-top: 2px;
   margin-left: -7px;
   
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .paginator .next::before {
   margin-top: -4px;
   margin-left: -2px;
   
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .paginator .next::after {
   margin-top: 2px;
   margin-left: -2px;
   
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .paginator a:hover {
@@ -1650,12 +1661,15 @@ input[name="switch"] {
 .subscription-form input:focus::-webkit-input-placeholder {
   color: transparent;
 }
+
 .subscription-form input:focus::-moz-placeholder {
   color: transparent;
 }
+
 .subscription-form input:focus:-moz-placeholder {
   color: transparent;
 }
+
 .subscription-form input:focus:-ms-input-placeholder {
   color: transparent;
 }
@@ -1946,11 +1960,13 @@ input[name="switch"] {
 }
 
 .modal-content .modal-content-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-content .modal-content-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-content b {
@@ -2049,14 +2065,21 @@ input[name="switch"] {
   background: rgba(0,0,0,0.3);
 }
 
+@-webkit-keyframes shake {
+  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-15px); transform: translateX(-15px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(15px); transform: translateX(15px); }
+}
+
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
-  20%, 40%, 60%, 80% { transform: translateX(15px); }
+  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-15px); transform: translateX(-15px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(15px); transform: translateX(15px); }
 }
 
 .modal-content-error {
-  animation: shake 0.7s;
+  -webkit-animation: shake 0.7s;
+          animation: shake 0.7s;
 }
 
 .modal-overlay-show {

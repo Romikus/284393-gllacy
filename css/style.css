@@ -1912,6 +1912,10 @@ input[name="switch"] {
   border-radius: 10px;
 }
 
+.modal-content-show {
+  display: block;
+}
+
 .modal-content .modal-content-close {
   position: absolute;
   top: 15px;
@@ -1969,6 +1973,14 @@ input[name="switch"] {
   font-weight: normal;
   
   color: #999;
+}
+
+.site-wrapper .ladel-visibility {
+  visibility: visible;
+}
+
+.site-wrapper .text-blue {
+  color: #5b9ddf;
 }
 
 .feedback-form input {
@@ -2035,6 +2047,10 @@ input[name="switch"] {
   height:  100%;
   
   background: rgba(0,0,0,0.3);
+}
+
+.modal-overlay-show {
+  display: block;
 }
 
 /* распорка */
